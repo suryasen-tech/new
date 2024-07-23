@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.5em;
+}
+
+h2 a:hover {
+    color: #004999;
+}
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.car-container {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.car {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: auto;
+    animation: drive 10s linear infinite;
+}
+
+@keyframes drive {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 100%;
+    }
+}
